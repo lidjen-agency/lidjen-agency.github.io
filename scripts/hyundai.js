@@ -1,6 +1,5 @@
 var form = document.getElementById("form");
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
   var optinCheckbox = document.getElementById('gdprCheckbox');
   var optinemail = document.getElementById("optin_email");
   var optincall = document.getElementById("optin_call");
