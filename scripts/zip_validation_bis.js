@@ -1076,7 +1076,7 @@ document.querySelector('input#zip').addEventListener('blur', (e) => {
   }
 });
 
-document.querySelector('select#situationpropriete__c').addEventListener('blur', (e) => {
+document.querySelector('input[name="situationpropriete__c"]:checked').addEventListener('blur', (e) => {
   const value = e.target.value;
   if (value == "Locataire") {
     document.getElementById("errorSituation").style.display = "block";
@@ -1085,7 +1085,7 @@ document.querySelector('select#situationpropriete__c').addEventListener('blur', 
   }
 });
 
-document.querySelector('select#delai_projet').addEventListener('blur', (e) => {
+document.querySelector('input[name="delai_projet"]:checked').addEventListener('blur', (e) => {
   const value = e.target.value;
   if (value == "Dans plus de 6 mois") {
     document.getElementById("errorTravaux").style.display = "block";
