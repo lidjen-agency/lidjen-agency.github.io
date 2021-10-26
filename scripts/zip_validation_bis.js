@@ -1076,7 +1076,7 @@ document.querySelector('input#zip').addEventListener('blur', (e) => {
   }
 });
 
-document.querySelector('input[name="situationpropriete__c"]:checked').addEventListener('blur', (e) => {
+document.querySelectorAll('input[name="situationpropriete__c"]').addEventListener('blur', (e) => {
   const value = e.target.value;
   if (value == "Locataire") {
     document.getElementById("errorSituation").style.display = "block";
