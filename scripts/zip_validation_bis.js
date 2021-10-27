@@ -1242,42 +1242,6 @@ document.querySelector('input#zip').addEventListener('blur', (e) => {
   }
 });
 
-document.querySelectorAll('input[name="situationpropriete__c"]').addEventListener('blur', (e) => {
-  const value = e.target.value;
-  if (value == "Locataire") {
-    document.getElementById("errorSituation").style.display = "block";
-  } else {
-    document.getElementById("errorSituation").style.display = "none";
-  }
-});
-
-document.querySelector('input[name="delai_projet"]:checked').addEventListener('blur', (e) => {
-  const value = e.target.value;
-  if (value == "Dans plus de 6 mois") {
-    document.getElementById("errorTravaux").style.display = "block";
-  } else {
-    document.getElementById("errorTravaux").style.display = "none";
-  }
-});
-
-document.querySelector('select#financement_affil').addEventListener('blur', (e) => {
-  const value = e.target.value;
-  if (value == "non") {
-    document.getElementById("errorFinancement").style.display = "block";
-  } else {
-    document.getElementById("errorFinancement").style.display = "none";
-  }
-});
-
-document.querySelector('select#budget_global').addEventListener('blur', (e) => {
-  const value = e.target.value;
-  if (value == "Entre 5 000€ et 10 000€") {
-    document.getElementById("errorBudget").style.display = "block";
-  } else {
-    document.getElementById("errorBudget").style.display = "none";
-  }
-});
-
 
 const submitButtons = document.querySelector("#btnBlock");
 const hideSubmit = () => {
